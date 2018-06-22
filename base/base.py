@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+'''
 
+id(变量): 查看变量的内存值
+'''
 
 # Number Python3 支持 int、float、bool、complex（复数）
 # 内置的 type() 函数可以用来查询变量所指的对象类型。

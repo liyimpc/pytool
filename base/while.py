@@ -40,3 +40,19 @@ enumerate()
 '''
 for index, m in enumerate([1,2,3,4,5,6]):
     print(index, m)
+
+'''
+pass 跳过
+break 终止
+'''
+num = 1
+str = "lym is a good man"
+print("begin")
+while num < len(str):
+    if num == 1:
+        pass
+    elif num == 5:
+        break;
+    else:
+        print(num)
+    num += 1
