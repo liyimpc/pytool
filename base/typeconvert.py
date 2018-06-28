@@ -13,3 +13,6 @@ s4 = tuple({1,2,3})
 # list -> iterator
 s5 = iter([1,2,3])
 print(next(s5))
+
+# string -> int
+int('1') # 字符串转换成整形，base=10 默认10进制转换

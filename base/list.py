@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+'''
+集合
+特点：
+    有序，可变
+'''
 
 list1 = [1, 2, "sunck", "good", False]
 print(list1)
