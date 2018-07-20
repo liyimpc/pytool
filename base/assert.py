@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
 assert:断言
 

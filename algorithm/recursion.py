@@ -9,6 +9,7 @@
 '''
 
 import os
+import collections
 
 # 输入一个数（大于等于1），求1+2+3+……+n的和
 def sum2(n):
@@ -35,7 +36,7 @@ def getAllDir(path, sp = ""):
 
 #getAllDir('/opt')
 
-# 栈模拟递归遍历
+# 模拟递归遍历-栈
 def getAllDirStack(path):
     stack = []
     # 数据压入栈
@@ -54,4 +55,26 @@ def getAllDirStack(path):
             else:
                 print("文件:", fileName)
 
-getAllDirStack('/opt')
+#getAllDirStack('/opt')
+
+
+# 模拟递归遍历-队列
+def getAllDirQueue(path):
+    queue = collections.deque()
+    # 数据压入栈
+    queue.append(path)
+    # 当栈为空的时候，停止循环
+    while len(queue) > 0:
+        # 从栈里取数据
+        dirPath = queue.popleft()
+        fileList = os.listdir(dirPath)
+        for fileName in fileList:
+            fileAbsPath = os.path.join(dirPath, fileName)
+            if os.path.isdir(fileAbsPath):
+                print("目录:", fileAbsPath)
+                # 发现是目录，压入栈
+                queue.append(fileAbsPath)
+            else:
+                print("文件:", fileName)
+
+getAllDirQueue('/opt')
