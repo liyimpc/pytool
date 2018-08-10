@@ -16,3 +16,9 @@ print(next(s5))
 
 # string -> int
 int('1') # 字符串转换成整形，base=10 默认10进制转换
+
+# dict -> str
+str1 = str({'a' : 1, 'b' : 2, 'c' : 3})
+
+# str -> dict
+dict2 = eval("{'a' : 1, 'b' : 2, 'c' : 3}")
