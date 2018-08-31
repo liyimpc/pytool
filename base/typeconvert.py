@@ -22,3 +22,4 @@ str1 = str({'a' : 1, 'b' : 2, 'c' : 3})
 
 # str -> dict
 dict2 = eval("{'a' : 1, 'b' : 2, 'c' : 3}")
+
